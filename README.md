@@ -34,7 +34,8 @@ Created the most important table fact table from the dimensison tables and log_d
 
 Install PostgreSQL database drivers by using the below command
 
-#pip install psycopg2
+```pip install psycopg2
+```
 
 Usage
 sql_queries.py: contains all SQL queries of the project.
