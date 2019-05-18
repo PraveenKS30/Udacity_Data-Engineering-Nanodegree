@@ -34,37 +34,45 @@ Created the most important table fact table from the dimensison tables and log_d
 
 Install PostgreSQL database drivers by using the below command
 
-```pip install psycopg2
+```
+pip install psycopg2
 ```
 
-Usage
+## Usage
+
 sql_queries.py: contains all SQL queries of the project.
 
 create_tables.py: run this file after writing for creating tables for the project.
 
-Libraries used:
+## Libraries used
+```
 import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
+```
 
-Functions and its importance:
+## Functions 
+
 create_database: This function helps in droping existing database, create new database and return the connection.
 
 drop_tables: Used to drop the existing tables.
 
 create_tables: This helps in creating above mentioned fact table and dimension tables.
 
+## Notebook
 etl.ipynb: A detailed step by step instruction to run and debug your code befor moving to etl.py. it reads and processes a single file from song_data and log_data and loads the data into your tables.
 
+## ETL script
+
 etl.py: read and process files from song_data and log_data and load them to tables.
-
-Libraries used:
-import os
-import glob
-import psycopg2
-import pandas as pd
-from sql_queries import *
-
-Functions and its importance:
+```
+   Libraries
+   import os
+   import glob
+   import psycopg2
+   import pandas as pd
+   from sql_queries import *
+```
+### Functions
 
 process_song_file: This function is used to read the song file and insert details with selected columns into song and artist dimension table.
 
@@ -76,10 +84,11 @@ main: used to call the process_data function.
 
 test.py: This will help you to check inserted records in tables.It displays the first 5 rows of each table.
 
-Execute files in the below order :.
+### Execute files in the below order 
+```
 create_tables.py
    $ python create_tables.py
 etl.ipynb/et.py
    $ python etl.py
 test.ipynb
-
+```
