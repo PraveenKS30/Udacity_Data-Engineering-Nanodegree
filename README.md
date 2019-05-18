@@ -7,3 +7,16 @@ They'd like a data engineer to create a Postgres database with tables designed t
 ## Project Description
 
 In this project, you'll apply what you've learned on data modeling with Postgres and build an ETL pipeline using Python. To complete the project, you will need to define fact and dimension tables for a star schema for a particular analytic focus, and write an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.
+
+## Solutioning
+
+Instead of storing the generated data from the user into the JSON files, a database which isused for modeling techniques and it helps in the fast retrieval of data. This can be made even more efficient with the approach of the STAR schema.
+
+The STAR schema consists of one fact table referencing any number of dimension tables which helps the Sparkify 
+for solving simplified common business logic.
+
+## Tables 
+
+#Fact Table: songplays: attributes referencing to the dimension tables.
+#Dimension Tables: users, songs, artists and time table.
+
