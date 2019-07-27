@@ -12,8 +12,9 @@ Created a STAR schema, optimized for song play analysis.
 
 ### DWH configurations:
 
--Create an IAM Role that makes Redshift able to access S3 bucket (ReadOnly)
--Create a RedShift Cluster and get the DWH_ENDPOIN(Host address) and DWH_ROLE_ARN and fill the config file.
+- Create an IAM Role that makes Redshift able to access S3 bucket (ReadOnly)
+
+- Create a RedShift Cluster and get the DWH_ENDPOIN(Host address) and DWH_ROLE_ARN and fill the config file.
 
 ### Description :
 
