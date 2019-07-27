@@ -37,8 +37,10 @@ insert_tables: This functionis used to insert data into fact and dimemsion table
 
 #### Order of execution :
 
+```
 - create_tables.py
-```$ python create_tables.py```
+$ python create_tables.py
 
 - etl.py
-```$ python etl.py```
+$ python etl.py
+```
